@@ -13,18 +13,27 @@ document.addEventListener("DOMContentLoaded", function(event) {
     document.querySelector('#quote-of-the-day').textContent = `"${quotes[Math.floor(Math.random() * quotes.length)]}"`;
   };
   randomQuote();
-  
-  // Do all of your work inside the document.addEventListener  
+
+
+  // Do all of your work inside the document.addEventListener
 
   // Part 1
-
-
+const shorterTitle = function() {
+  document.querySelector('#main-title').textContent = 'Welcome to the Dom';
+}
+shorterTitle();
   // Part 2
-
-
+const bodyBackground = function() {
+  let body = document.querySelector('body');
+  body.style.backgroundColor = '#bf897e';
+}
+bodyBackground();
   // Part 3
-
-
+const listChange = function() {
+  let list = document.getElementById('favorite-things');
+  list.removeChild(list.lastElementChild);
+}
+listChange();
   // Part 4
 
 
